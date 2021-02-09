@@ -1,3 +1,8 @@
+# healthyR.ts 0.1.1
+
+# healthyR.ts 0.1.1
+* update DESCRIPTION file and minor cleanups
+
 # healthyR.ts 0.1.0
 * Added functions
 1. ts_qc_run_chart
