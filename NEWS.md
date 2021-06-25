@@ -1,9 +1,21 @@
-# healthyR.ts 0.1.1
+# healthyR.ts 0.1.2
 
-# healthyR.ts 0.1.1
+# healthyR.ts 0.1.1.9000
+
+## Breaking Changes
+None
+
+## New Features
+1. Fix #16 - Add `ts_auto_recipe()` function
+
+## Minor Fixes and Improvments
+None
+
+## healthyR.ts 0.1.1
 * update DESCRIPTION file and minor cleanups
+* GitHub release: https://github.com/spsanderson/healthyR.ts/releases/tag/v0.1.1
 
-# healthyR.ts 0.1.0
+## healthyR.ts 0.1.0
 * Added functions
 1. ts_qc_run_chart
 2. ts_compare_data
