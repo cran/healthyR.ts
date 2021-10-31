@@ -2,7 +2,7 @@
 % Please edit documentation in R/wfs-linear-reg.R
 \name{ts_wfs_lin_reg}
 \alias{ts_wfs_lin_reg}
-\title{Linear Regression Workflowset Function}
+\title{Auto Linear Regression Workflowset Function}
 \usage{
 ts_wfs_lin_reg(.model_type, .recipe_list, .penalty = 1, .mixture = 0.5)
 }
@@ -44,23 +44,11 @@ set them yourself if you have a good understanding of what they should be.
 suppressPackageStartupMessages(library(modeltime))
 suppressPackageStartupMessages(library(timetk))
 suppressPackageStartupMessages(library(dplyr))
-suppressPackageStartupMessages(library(healthyR.data))
 suppressPackageStartupMessages(library(tidymodels))
 
-data <- healthyR_data \%>\%
- filter(ip_op_flag == "I") \%>\%
-   select(visit_end_date_time) \%>\%
-   rename(date_col = visit_end_date_time) \%>\%
-   summarise_by_time(
-       .date_var = date_col
-       , .by     = "month"
-       , value   = n()
-  ) \%>\%
-   filter_by_time(
-       .date_var     = date_col
-       , .start_date = "2012"
-       , .end_date   = "2019"
-   )
+data <- AirPassengers \%>\%
+  ts_to_tbl() \%>\%
+  select(-index)
 
 splits <- time_series_split(
    data
@@ -82,7 +70,18 @@ wf_sets
 }
 \seealso{
 \url{https://workflowsets.tidymodels.org/}(workflowsets)
+
+Other Auto Workflowsets: 
+\code{\link{ts_wfs_arima_boost}()},
+\code{\link{ts_wfs_auto_arima}()},
+\code{\link{ts_wfs_ets_reg}()},
+\code{\link{ts_wfs_mars}()},
+\code{\link{ts_wfs_nnetar_reg}()},
+\code{\link{ts_wfs_prophet_reg}()},
+\code{\link{ts_wfs_svm_poly}()},
+\code{\link{ts_wfs_svm_rbf}()}
 }
 \author{
 Steven P. Sanderson II, MPH
 }
+\concept{Auto Workflowsets}
