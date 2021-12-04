@@ -23,6 +23,7 @@ Currently supports forecasting model of one of the following from the
 \item \code{\link[forecast]{auto.arima}}
 \item \code{\link[forecast]{ets}}
 \item \code{\link[forecast]{nnetar}}
+\item \code{workflow} fitted models.
 }
 }
 \examples{
@@ -61,6 +62,7 @@ model_extraction_helper(fit_arima)
 Other Utility: 
 \code{\link{calibrate_and_plot}()},
 \code{\link{ts_info_tbl}()},
+\code{\link{ts_model_compare}()},
 \code{\link{ts_to_tbl}()}
 }
 \author{

@@ -1,6 +1,6 @@
 Package: healthyR.ts
 Title: The Time Series Modeling Companion to 'healthyR'
-Version: 0.1.5
+Version: 0.1.6
 Authors@R: c(
     person("Steven","Sanderson", email = "spsanderson@gmail.com", role = c("aut","cre")),
     person("Steven Sanderson", role = "cph"))
@@ -21,13 +21,13 @@ Imports: magrittr, rlang (>= 0.1.2), tibble, timetk, tidyr, tidyquant,
         earth
 Suggests: knitr, rmarkdown, roxygen2, scales, rsample, healthyR.data,
         stringr, forecast, tidymodels, cli, crayon, glue, rstudioapi,
-        xts, zoo, TSA, tune, dials, workflows
+        xts, zoo, TSA, tune, dials, workflows, tidyselect
 VignetteBuilder: knitr
 Depends: R (>= 2.10)
 NeedsCompilation: no
-Packaged: 2021-11-10 22:28:39 UTC; Steve
+Packaged: 2021-12-04 01:53:52 UTC; Steve
 Author: Steven Sanderson [aut, cre],
   Steven Sanderson [cph]
 Maintainer: Steven Sanderson <spsanderson@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-11-10 23:00:04 UTC
+Date/Publication: 2021-12-04 05:40:02 UTC

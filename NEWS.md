@@ -1,4 +1,25 @@
-# healthyR.ts 0.1.5
+# healthyR.ts 0.1.6
+
+## Breaking Changes
+None
+
+## New Features
+1. Fix #157 - Add function `ts_vva_plot()`
+2. Fix #149 - Add function `ts_model_compare()`
+3. Fix #156 - Add functions:
+-  `ts_acceleration_vec()`
+-  `ts_acceleration_augment()`
+-  `step_ts_accleration()`
+4. Fix #155 - Add functions:
+-  `ts_velocity_vec()`
+-  `ts_velocity_augment()`
+-  `step_ts_velocity()`
+
+## Minor Fixes and Improvements
+1. Fix #159 - Add parameter `.date_col` to `ts_sma_plot()` so that if a tibble is passed
+the appropriate column is passed to the `ggplot` object.
+2. Fix #164 - Update `model_extraction_helper()` function to extract workflow fit
+models.
 
 # healthyR.ts 0.1.5
 
