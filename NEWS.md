@@ -1,3 +1,17 @@
+# healthyR.ts 0.1.7
+
+## Breaking Changes
+None
+
+## New Features
+1. Fix #181 - Add function `ts_qq_plot()`
+2. Fix #180 - Add function `ts_scedacity_scatter_plot()`
+3. Fix #179 - Add function `ts_model_rank_tbl()`
+
+## Minor Fixes and Improvments
+1. Fix #178 - Extend `model_extraction_helper()` to grab `workflow` `model_spec`
+and `model_fit` objects.
+
 # healthyR.ts 0.1.6
 
 ## Breaking Changes
@@ -9,7 +23,7 @@ None
 3. Fix #156 - Add functions:
 -  `ts_acceleration_vec()`
 -  `ts_acceleration_augment()`
--  `step_ts_accleration()`
+-  `step_ts_acceleration()`
 4. Fix #155 - Add functions:
 -  `ts_velocity_vec()`
 -  `ts_velocity_augment()`

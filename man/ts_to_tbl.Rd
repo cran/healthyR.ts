@@ -33,7 +33,10 @@ Other Utility:
 \code{\link{calibrate_and_plot}()},
 \code{\link{model_extraction_helper}()},
 \code{\link{ts_info_tbl}()},
-\code{\link{ts_model_compare}()}
+\code{\link{ts_model_compare}()},
+\code{\link{ts_model_rank_tbl}()},
+\code{\link{ts_qq_plot}()},
+\code{\link{ts_scedacity_scatter_plot}()}
 }
 \author{
 Steven P. Sanderson II, MPH
