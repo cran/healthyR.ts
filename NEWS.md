@@ -1,3 +1,21 @@
+# healthyR.ts 0.1.8
+
+## Breaking Changes
+None
+
+## New Features
+1. Fix #201 - Add Fitted `ts` and Fitted `tibble` data to output.
+2. Fix #202 - Add Residuals `ts` and Residuals `tibble` data to output.
+3. Fix #204 - Add `Arima()` models with xreg to `ts_forecast_simulator()`
+
+## Minor Fixes and Improvements
+1. Fix #199 - Update `model_extraction_helper()` to utilize `forecast:::arima.string()`
+under the hood for `Arima` `arima` and `auto.arima` models produced by the `forecast`
+package.
+2. Fix #195 - Drop need for `crayon`, `cli`, and `rstudioapi` since all it did was
+make a welcome message that can be done with regular `print()` method.
+3. Fix #213 - Update navigation bar.
+
 # healthyR.ts 0.1.7
 
 ## Breaking Changes
