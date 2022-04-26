@@ -1,3 +1,28 @@
+# healthyR.ts 0.1.9
+
+## Breaking Changes
+None
+
+## New Features
+1. Fix #223 - Add function `ts_arima_simulator()` 
+2. Fix #227 - Add function `ts_feature_cluster()`
+3. Fix #228 - Add function `ts_feature_cluster_plot()`
+4. Fix #241 - Add function `ts_auto_glmnet()`
+5. Fix #243 - Add function `ts_auto_xgboost()`
+6. Fix #244 - Add function `ts_auto_arima_xgboost()`
+7. Fix #245 - Add function `ts_auto_mars()`
+8. Fix #246 - Add function `ts_auto_exp_smoothing()`
+9. Fix #247 - Add function `ts_auto_croston()`
+10. Fix #248 - Add function `ts_auto_nnetar()`
+11. Fix #250 - Add function `ts_auto_prophet_reg()`
+12. Fix #251 - Add function `ts_auto_prophet_boost()`
+
+## Minor Fixes and Improvements
+1. Fix #212 - Update recipes to use the new `[recipes::print_step()]` method.
+2. Fix #229 - Change all plots to  `ggplot2::theme_minimal()`
+3. Fix #242 - Add `hardhat` to DESCRIPTION since functionality like extracting
+dials parameters was taken out of dials and moved to hardhat.
+
 # healthyR.ts 0.1.8
 
 ## Breaking Changes

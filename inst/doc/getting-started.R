@@ -37,7 +37,6 @@ df %>%
 ## -----------------------------------------------------------------------------
 library(dplyr)
 library(ggplot2)
-library(tidyquant)
 
 df %>%
     group_by(x) %>%
@@ -79,7 +78,5 @@ df_merged %>%
     labs(title = "", x = "", y = "") +
     facet_wrap(~ver, scales = "free") +
     scale_y_continuous(labels = scales::comma) +
-    scale_colour_tq() +
-    theme_tq() +
     theme(legend.position = "none")
 
