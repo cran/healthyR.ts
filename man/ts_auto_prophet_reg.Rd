@@ -102,12 +102,18 @@ ts_prophet_reg$recipe_info
 
 Other Boiler_Plate: 
 \code{\link{ts_auto_arima_xgboost}()},
+\code{\link{ts_auto_arima}()},
 \code{\link{ts_auto_croston}()},
 \code{\link{ts_auto_exp_smoothing}()},
 \code{\link{ts_auto_glmnet}()},
+\code{\link{ts_auto_lm}()},
 \code{\link{ts_auto_mars}()},
 \code{\link{ts_auto_nnetar}()},
 \code{\link{ts_auto_prophet_boost}()},
+\code{\link{ts_auto_smooth_es}()},
+\code{\link{ts_auto_svm_poly}()},
+\code{\link{ts_auto_svm_rbf}()},
+\code{\link{ts_auto_theta}()},
 \code{\link{ts_auto_xgboost}()}
 
 Other prophet: 

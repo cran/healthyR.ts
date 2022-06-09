@@ -10,24 +10,13 @@ knitr::opts_chunk$set(
 library(healthyR.ts)
 
 ## ----example_data-------------------------------------------------------------
-suppressPackageStartupMessages(library(healthyR.data))
 suppressPackageStartupMessages(library(dplyr))
 suppressPackageStartupMessages(library(ggplot2))
 suppressPackageStartupMessages(library(timetk))
 
-data_tbl <- healthyR_data%>%
-    filter(ip_op_flag == 'I') %>%
-    summarise_by_time(
-        .date_var = visit_end_date_time,
-        .by = "month",
-        value = n()
-    ) %>%
-    filter_by_time(
-        .date_var = visit_end_date_time,
-        .start_date = "2015",
-        .end_date = "2019"
-   ) %>%
-  rename(date_col = visit_end_date_time)
+data_tbl <- AirPassengers %>%
+    ts_to_tbl() %>%
+    select(-index)
 
 ## ----data_glimpse-------------------------------------------------------------
 glimpse(data_tbl)

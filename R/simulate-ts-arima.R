@@ -38,8 +38,6 @@
 #' @param ... Any other additional arguments for [stats::arima.sim]
 #'
 #' @examples
-#' library(dplyr)
-#'
 #' output <- ts_arima_simulator()
 #' output$plots$static_plot
 #'
@@ -120,7 +118,7 @@ ts_arima_simulator <- function(.n = 100, .num_sims = 25, .order_p = 0,
     })
 
     # Make simulated time series list into a tibble
-    simulations_tbl <- purrr::map_dfr(simulations_ts, as_tibble) %>%
+    simulations_tbl <- purrr::map_dfr(simulations_ts, dplyr::as_tibble) %>%
         dplyr::group_by(n) %>%
         dplyr::mutate(id = dplyr::row_number(n)) %>%
         dplyr::ungroup()
