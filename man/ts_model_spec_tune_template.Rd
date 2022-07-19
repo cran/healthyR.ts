@@ -4,10 +4,13 @@
 \alias{ts_model_spec_tune_template}
 \title{Time Series Model Spec Template}
 \usage{
-ts_model_spec_tune_template(.parsnip_engine = NULL)
+ts_model_spec_tune_template(.parsnip_engine = NULL, .model_spec_class = NULL)
 }
 \arguments{
 \item{.parsnip_engine}{The model engine that is used by \code{\link[parsnip:set_engine]{parsnip::set_engine()}}.}
+
+\item{.model_spec_class}{The model spec class that is use by \code{parsnip}. For
+example the 'kernlab' engine can use both \code{svm_poly} and \code{svm_rbf}.}
 }
 \value{
 A tuneable parsnip model specification.
@@ -40,6 +43,7 @@ parsnip/modeltime engines:
 \item "keras"
 \item "earth"
 \item "xgboost"
+\item "kernlab"
 }
 }
 \examples{
@@ -50,9 +54,27 @@ ts_model_spec_tune_template("prophet")
 \seealso{
 Other Model Tuning: 
 \code{\link{ts_model_auto_tune}()}
+
+Other Utility: 
+\code{\link{calibrate_and_plot}()},
+\code{\link{internal_ts_backward_event_tbl}()},
+\code{\link{internal_ts_both_event_tbl}()},
+\code{\link{internal_ts_forward_event_tbl}()},
+\code{\link{model_extraction_helper}()},
+\code{\link{ts_get_date_columns}()},
+\code{\link{ts_info_tbl}()},
+\code{\link{ts_is_date_class}()},
+\code{\link{ts_lag_correlation}()},
+\code{\link{ts_model_auto_tune}()},
+\code{\link{ts_model_compare}()},
+\code{\link{ts_model_rank_tbl}()},
+\code{\link{ts_qq_plot}()},
+\code{\link{ts_scedacity_scatter_plot}()},
+\code{\link{ts_to_tbl}()}
 }
 \author{
 Steven P. Sanderson II, MPH
 }
 \concept{Helper}
 \concept{Model Tuning}
+\concept{Utility}

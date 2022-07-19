@@ -81,6 +81,7 @@ This function can work with the following parsnip/modeltime engines:
 \item "keras"
 \item "earth"
 \item "xgboost"
+\item "kernlab"
 }
 
 This function returns a list object with several items inside of it. There are
@@ -185,8 +186,26 @@ output <- ts_model_auto_tune(
 \seealso{
 Other Model Tuning: 
 \code{\link{ts_model_spec_tune_template}()}
+
+Other Utility: 
+\code{\link{calibrate_and_plot}()},
+\code{\link{internal_ts_backward_event_tbl}()},
+\code{\link{internal_ts_both_event_tbl}()},
+\code{\link{internal_ts_forward_event_tbl}()},
+\code{\link{model_extraction_helper}()},
+\code{\link{ts_get_date_columns}()},
+\code{\link{ts_info_tbl}()},
+\code{\link{ts_is_date_class}()},
+\code{\link{ts_lag_correlation}()},
+\code{\link{ts_model_compare}()},
+\code{\link{ts_model_rank_tbl}()},
+\code{\link{ts_model_spec_tune_template}()},
+\code{\link{ts_qq_plot}()},
+\code{\link{ts_scedacity_scatter_plot}()},
+\code{\link{ts_to_tbl}()}
 }
 \author{
 Steven P. Sanderson II, MPH
 }
 \concept{Model Tuning}
+\concept{Utility}

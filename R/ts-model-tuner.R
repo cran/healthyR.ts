@@ -1,6 +1,7 @@
 #' Time Series Model Tuner
 #'
 #' @family Model Tuning
+#' @family Utility
 #'
 #' @author Steven P. Sanderson II, MPH
 #'
@@ -28,6 +29,7 @@
 #' -  "keras"
 #' -  "earth"
 #' -  "xgboost"
+#' -  "kernlab"
 #'
 #' This function returns a list object with several items inside of it. There are
 #' three categories of items that are inside of the list.
@@ -215,7 +217,10 @@ ts_model_auto_tune <- function(.modeltime_model_id, .calibration_tbl,
   # Model Spec
   model_spec <- plucked_model %>% parsnip::extract_spec_parsnip()
   model_spec_engine <- model_spec[["engine"]]
-  model_spec_tuner <- healthyR.ts::ts_model_spec_tune_template(model_spec_engine)
+  model_spec_class <- workflows::extract_spec_parsnip(plucked_model) %>% class()
+  model_spec_tuner <- healthyR.ts::ts_model_spec_tune_template(
+      model_spec_engine, model_spec_class
+      )
 
   # * Grid Spec ----
   grid_spec <- dials::grid_latin_hypercube(
@@ -281,6 +286,7 @@ ts_model_auto_tune <- function(.modeltime_model_id, .calibration_tbl,
     model_info = list(
       model_spec           = model_spec,
       model_spec_engine    = model_spec_engine,
+      model_spec_class     = model_spec_class,
       model_spec_tuner     = model_spec_tuner,
       plucked_model        = plucked_model,
       wflw_tune_spec       = wflw_tune_spec,

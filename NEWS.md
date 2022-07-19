@@ -1,3 +1,21 @@
+# healthyR.ts 0.2.1
+
+## Breaking Changes
+None
+
+## New Features
+1. Fix #306 - Add function `ts_time_event_analysis_tbl()`
+2. Fix #315 - Add function `ts_lag_correlation()`
+3. Fix #327 - Add some date helpers
+4. Fix #326 - Add functions `ci_hi()` and `ci_lo()`
+5. Fix #325 - Add function `ts_event_analysis_plot()`
+
+## Minor Fixes and Improvements
+1. Fix #333 - Update `ts_model_auto_tune()` and `ts_model_spec_tune_template()` to
+accept `svm_poly` and `svm_rbf`. This helps in allowing users to auto tune models
+that are create by `ts_wfs_svm_poly()` and `ts_wfs_svm_rbf()` functions respectively.
+Also added "model_spec_class" to the output of the `ts_model_auto_tune()` function.
+
 # healthyR.ts 0.2.0
 
 ## Breaking Changes
