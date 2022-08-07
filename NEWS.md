@@ -1,3 +1,23 @@
+# healthyR.ts 0.2.2
+
+## Breaking Changes
+1. Fix 345 - Fix `ts_sma_plot()` There is a change in the API of this function.
+It now requires a `data.frame`/`tibble` to be passed to the `.data` parameter, and
+it also now requires the input of a date column and value column. This also now 
+no longer returns invisible. There was also a fix in the sliding calculation
+to appropriately use the given value column.
+
+## New Features
+1. Fix #342 - Add function `ts_extract_auto_fitted_workflow()` Which will pull
+out the fitted workflow from any of the Boilerplate functions.
+
+## Minor Fixes and Improvements
+1. Fix #343 - Add attributes to output list of boilerplate functions.
+2. Fix #347 - Fix `ts_auto_lm()` by dropping `step_rm()` and `step_corr()` which
+would prevent `calibrate_and_plot()` from working due to `modeltime_calibration()`
+failing. Also dropped unused parameters from function and documentation.
+3. Fix #349 - Fix to `ts_lag_correlation()` `select` statement.
+
 # healthyR.ts 0.2.1
 
 ## Breaking Changes
