@@ -1,3 +1,14 @@
+# healthyR.ts 0.2.5
+
+## Breaking Changes
+None
+
+## New Features
+None
+
+## Minor Fixes and Improvements
+1. Fix #380 - Fix `ts_lag_correlation()` to fix a bug in the correlation matrix calculation where columns may come through that are not numeric and are not part of the original value and it's lags.
+
 # healthyR.ts 0.2.4
 
 ## Breaking Changes
@@ -7,10 +18,10 @@ None
 None
 
 ## Minor Fixes and Improvements
-1. Fix #368 - Pull request from @EmilHvitfeldt to use `recipess::check_type()`
+1. Fix #368 - Pull request from @EmilHvitfeldt to use `recipes::check_type()`
 on recipe functions.
 2. Fix #370 - Update `ts_model_spec_tune_template()` to set `regression` as the
-argument to `parsnip::set_mode()` which fies a failure in the `ts_model_auto_tune()`
+argument to `parsnip::set_mode()` which fires a failure in the `ts_model_auto_tune()`
 not running on newer versions of `parsnip`
 
 # healthyR.ts 0.2.3

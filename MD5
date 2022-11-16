@@ -1,7 +1,7 @@
-4d4e923043a2749b13f7dd740f3c4918 *DESCRIPTION
+26008d66ae9bd36124905421d0fafb85 *DESCRIPTION
 1aede0ad7060160054f065b32db1817c *LICENSE
 9765d7919d16418fe28668834340d790 *NAMESPACE
-d53b385d82da37e0079b4d26c2e43c5f *NEWS.md
+957d609184a2aeef809815d2394f1403 *NEWS.md
 a00d10c8bafa23dfe002f32a8022e445 *R/00_global_variables.R
 e3194978ee9f870b0f2aadba8053bb23 *R/arima-string.R
 4d0747d4ab0f8bd63d18160f924cc6c1 *R/augment-ts-acceleration.R
@@ -42,7 +42,7 @@ b2f5a2a645158cc4e99b25f3f267a3bf *R/ts-event-analysis-tbl.R
 e9e9928293974b84adc40d0eb03c1438 *R/ts-feature-cluster-plt.R
 ecd6c6d9ca1dc75120f4074a6ad6202d *R/ts-feature-cluster-tbl.R
 21d4df2942e75116f2f169c3ad901827 *R/ts-info-tbl.R
-8875bef3bc5d5002c6b7efd4cfaa7963 *R/ts-lag-correlation.R
+22af28bf1212dcd0dfcb4db41dc9e0a2 *R/ts-lag-correlation.R
 6bc47886c54851bc0c1024753dc274f9 *R/ts-ma-plt.R
 92f8a61f9e17d9eacfb06f08305b7c7d *R/ts-model-compare.R
 b208e5959a33d2c34c2252ef43337da2 *R/ts-model-rank.R
@@ -73,14 +73,14 @@ b2978d52e33efcf3c48c7b625ed00c00 *R/wfs-linear-reg.R
 05d4513c4264166376fd2b09040e3181 *R/wfs-svm-rbf.R
 cb7ffaab9eb550e9c788c809ad88146c *R/wfs-xgboost-reg.R
 64a581bd03f1fa8947049599b1514cff *R/zzz.R
-b6af271ec01baa1de391698bd25d8cab *README.md
+b4c1147f47d770ea2d3e821e27630f16 *README.md
 1415d666ce476e05d13a4723cd329df3 *build/vignette.rds
 b6c4782c0794212ffb0d6db0a03380c4 *inst/doc/getting-started.R
 6037aff1de12fccccd1171ca5666bf9b *inst/doc/getting-started.Rmd
-719224c16d24683c785667a101b88a7d *inst/doc/getting-started.html
+ec335616904a1e256caf5183cab5d314 *inst/doc/getting-started.html
 66b18866f3e94e5e1ca9e16aec28b371 *inst/doc/using-tidy-fft.R
 b9e740906ebb294728d869e0bcc4fec1 *inst/doc/using-tidy-fft.Rmd
-423b284083568abc763b0eefbaa7d2b6 *inst/doc/using-tidy-fft.html
+638923a972abb5d3c15ea6b5813c3f82 *inst/doc/using-tidy-fft.html
 2c3ab150bbe27a0c24d463571ced2cfd *man/arima_string.Rd
 f72d99fdc42e9ff5d62f7a30ccf005b6 *man/assign_value.Rd
 95ee50fa0f1ae93a09c239195ce0969b *man/calibrate_and_plot.Rd
@@ -90,8 +90,8 @@ fa7503b5391392ccfcf3e0860be84b38 *man/ci_hi.Rd
 29df72bf373909f77b6423bbddbf09a4 *man/color_blind.Rd
 4055e502394a7ea5872a505e90a9b8f4 *man/figures/README-example-1.png
 502a5f8dd6ba90060101596366cb7d58 *man/figures/README-pressure-1.png
-ff241adb411b8dbeea4efe4fc84bea90 *man/figures/README-ts_random_walk_ggplot_layers-1.png
-c765945f76b8489570c1698516199456 *man/figures/README-unnamed-chunk-2-1.png
+b24c314df04d87481030d43293d08884 *man/figures/README-ts_random_walk_ggplot_layers-1.png
+a3827ba86e3bac397a738ec17e0f4ea6 *man/figures/README-unnamed-chunk-2-1.png
 443d48453f8509ea6be7cbe928a5919f *man/figures/test1.png
 509703284f3be25ebbea1d2e830f1ae6 *man/get_recipe_call.Rd
 9e4c107070909c25597d447217362c4e *man/internal_ts_backward_event_tbl.Rd
