@@ -1,3 +1,14 @@
+# healthyR.ts 0.2.6
+
+## Breaking Changes
+None
+
+## New Features
+1. Fix #389 - Add function `ts_brownian_motion()`
+
+## Minor Fixes and Improvements
+1. Fix #387 - Fix documentation for `ts_scedacity_scatter_plot()`
+
 # healthyR.ts 0.2.5
 
 ## Breaking Changes
