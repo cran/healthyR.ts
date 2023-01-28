@@ -8,7 +8,8 @@ ts_brownian_motion(
   .time = 100,
   .num_sims = 10,
   .delta_time = 1,
-  .initial_value = 0
+  .initial_value = 0,
+  .return_tibble = TRUE
 )
 }
 \arguments{
@@ -19,9 +20,12 @@ ts_brownian_motion(
 \item{.delta_time}{Time step size.}
 
 \item{.initial_value}{Integer representing the initial value.}
+
+\item{.return_tibble}{The default is TRUE. If set to FALSE then an object
+of class matrix will be returned.}
 }
 \value{
-A tibble
+A tibble/matrix
 }
 \description{
 Create a Brownian Motion Tibble
@@ -34,11 +38,12 @@ who first described the phenomenon in 1827.
 
 The equation for Brownian Motion can be represented as:
 
-\if{html}{\out{<div class="sourceCode">}}\preformatted{$$ W(t) = \\sqrt\{t\} Z $$
+\if{html}{\out{<div class="sourceCode">}}\preformatted{W(t) = W(0) + sqrt(t) * Z
 }\if{html}{\out{</div>}}
 
-Where W(t) represents the Brownian Motion process at time t, and Z is a
-standard normal random variable.
+Where W(t) is the Brownian motion at time t, W(0) is the initial value of the
+Brownian motion, sqrt(t) is the square root of time, and Z is a standard
+normal random variable.
 
 Brownian Motion has numerous applications, including modeling stock prices in
 financial markets, modeling particle movement in fluids, and modeling random
@@ -52,6 +57,9 @@ ts_brownian_motion()
 \seealso{
 Other Data Generator: 
 \code{\link{tidy_fft}()},
+\code{\link{ts_brownian_motion_augment}()},
+\code{\link{ts_geometric_brownian_motion_augment}()},
+\code{\link{ts_geometric_brownian_motion}()},
 \code{\link{ts_random_walk}()}
 }
 \author{
