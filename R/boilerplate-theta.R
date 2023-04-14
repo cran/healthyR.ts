@@ -27,8 +27,10 @@
 #' @param .bootstrap_final Not yet implemented.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' library(dplyr)
+#' library(timetk)
+#' library(modeltime)
 #'
 #' data <- AirPassengers %>%
 #'   ts_to_tbl() %>%
@@ -157,12 +159,12 @@ ts_auto_theta <- function(.data, .date_col, .value_col, .rsamp_obj,
     )
 
     # Add attributes
-    attr(output, ".tune") <- .tune
-    attr(output, ".grid_size") <- .grid_size
-    attr(output, ".cv_assess") <- .cv_assess
-    attr(output, ".cv_skip") <- .cv_skip
-    attr(output, ".cv_slice_limit") <- .cv_slice_limit
-    attr(output, ".best_metric") <- .best_metric
+    attr(output, ".tune") <- NULL
+    attr(output, ".grid_size") <- NULL
+    attr(output, ".cv_assess") <- NULL
+    attr(output, ".cv_skip") <- NULL
+    attr(output, ".cv_slice_limit") <- NULL
+    attr(output, ".best_metric") <- NULL
     attr(output, ".bootstrap_final") <- .bootstrap_final
     attr(output, ".mode") <- "regression"
     attr(output, ".parsnip_engine") <- "theta"
