@@ -1,3 +1,15 @@
+# healthyR.ts 0.2.9
+
+## Breaking Changes
+None
+
+## New Features
+None
+
+## Minor Fixes and Improvements
+1. Fix #436 - Modify all _boilerplate_ fitting functions to use `tune::show_best(n = 1)`
+instead of `Inf` and using `dplyr::slice(1)`
+
 # healthyR.ts 0.2.8
 
 ## Breaking Changes
