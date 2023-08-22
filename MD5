@@ -1,7 +1,7 @@
-2bdd59054733d5460109ea427de49a9e *DESCRIPTION
+7e6cc4e48fdcb4d5844e262c3bbe7a72 *DESCRIPTION
 1aede0ad7060160054f065b32db1817c *LICENSE
 b4ea21c820948afd88f5e62b005139ed *NAMESPACE
-c01bb96c1c54c537d4ca95a5ac5cd896 *NEWS.md
+462b829a0851471841640a430116ec95 *NEWS.md
 61dcd19ce0584b2b25af0c8ad1fc908d *R/00_global_variables.R
 e3194978ee9f870b0f2aadba8053bb23 *R/arima-string.R
 4d0747d4ab0f8bd63d18160f924cc6c1 *R/augment-ts-acceleration.R
@@ -35,7 +35,7 @@ eb57e733fe5be87b6b4287e7aefda70c *R/stats-confidence-intervals.R
 f57f4deb8daaf6123bcc948210b65ed8 *R/step-ts-acceleration.R
 d4e172d2d68d1b0f4d52410d6e90ffde *R/step-ts-velocity.R
 9f56ffea9187aa7eff958f00dfd3167c *R/tidy-fft.R
-a2d70eddb7efe183453695ebf360ce06 *R/ts-auto-recipe.R
+fbed6224edd221c8baf947d57b8f8e0e *R/ts-auto-recipe.R
 7ec9984c2fd575c8c71ef40edbce0cbe *R/ts-brownian-motion-augment.R
 d9d8813d8ab47bf10e2d7acf8194fd17 *R/ts-brownian-motion.R
 1d7cd4e76f94c693c1d50dfb8c12cdda *R/ts-calendar-heatmap-plt.R
@@ -78,14 +78,14 @@ b2978d52e33efcf3c48c7b625ed00c00 *R/wfs-linear-reg.R
 05d4513c4264166376fd2b09040e3181 *R/wfs-svm-rbf.R
 cb7ffaab9eb550e9c788c809ad88146c *R/wfs-xgboost-reg.R
 64a581bd03f1fa8947049599b1514cff *R/zzz.R
-2bae1d075d17f83f9479c56f1d1abd07 *README.md
+4eb75a7ea1b1eff6e9c081c7e78b6ae1 *README.md
 1415d666ce476e05d13a4723cd329df3 *build/vignette.rds
 b6c4782c0794212ffb0d6db0a03380c4 *inst/doc/getting-started.R
 6037aff1de12fccccd1171ca5666bf9b *inst/doc/getting-started.Rmd
-3a9f096f44e1dbea0489d2234cc034bf *inst/doc/getting-started.html
+806383e90e24e930ba4559c8f7c4bc14 *inst/doc/getting-started.html
 66b18866f3e94e5e1ca9e16aec28b371 *inst/doc/using-tidy-fft.R
 b9e740906ebb294728d869e0bcc4fec1 *inst/doc/using-tidy-fft.Rmd
-c7fdd7a5d4195c65713ee2e0fcb2a7b1 *inst/doc/using-tidy-fft.html
+471291848864e1d17f3bb43b8b18ddd0 *inst/doc/using-tidy-fft.html
 2c3ab150bbe27a0c24d463571ced2cfd *man/arima_string.Rd
 4a7aa27628c9b8c712b161cfb0a4ff04 *man/assign_value.Rd
 95ee50fa0f1ae93a09c239195ce0969b *man/calibrate_and_plot.Rd
@@ -95,8 +95,8 @@ fa7503b5391392ccfcf3e0860be84b38 *man/ci_hi.Rd
 29df72bf373909f77b6423bbddbf09a4 *man/color_blind.Rd
 4055e502394a7ea5872a505e90a9b8f4 *man/figures/README-example-1.png
 502a5f8dd6ba90060101596366cb7d58 *man/figures/README-pressure-1.png
-a99a7fa645fc732d7b9868fc1cf7dd49 *man/figures/README-ts_random_walk_ggplot_layers-1.png
-feff1acff70a01be33b33c29bf12aab6 *man/figures/README-unnamed-chunk-2-1.png
+2770faea176a140fee8ce21a73cf2027 *man/figures/README-ts_random_walk_ggplot_layers-1.png
+1d21d41b408439963618a7aac8bb665a *man/figures/README-unnamed-chunk-2-1.png
 443d48453f8509ea6be7cbe928a5919f *man/figures/logo.png
 384094077c531c77e786d3110daf97d9 *man/get_recipe_call.Rd
 9e4c107070909c25597d447217362c4e *man/internal_ts_backward_event_tbl.Rd
@@ -122,7 +122,7 @@ edf562e1fea0268ac8d4eb129dd2b7d6 *man/ts_auto_mars.Rd
 ea2cffdbea7858046e62a9c8d296569c *man/ts_auto_nnetar.Rd
 d6dcc0d7883733b99d1105dfd08ab0d1 *man/ts_auto_prophet_boost.Rd
 76e487223695d27fbefe0cb939317a57 *man/ts_auto_prophet_reg.Rd
-cc12b5119c42d15c90a030fe65a2fafc *man/ts_auto_recipe.Rd
+a07c5b78a4e07b54002d368ff8607673 *man/ts_auto_recipe.Rd
 0ebc2e2d9c20c48a07832fe6b3a71793 *man/ts_auto_smooth_es.Rd
 8970f71b62306fde3f3335f96523a32c *man/ts_auto_svm_poly.Rd
 47e5712415ef5011d96f5f1577770cb5 *man/ts_auto_svm_rbf.Rd
