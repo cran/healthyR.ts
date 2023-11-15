@@ -22,7 +22,6 @@ ts_is_date_class()
 
 letters \%>\% ts_is_date_class()
 
-
 }
 \seealso{
 Other Utility: 
@@ -41,6 +40,11 @@ Other Utility:
 \code{\link{ts_model_spec_tune_template}()},
 \code{\link{ts_qq_plot}()},
 \code{\link{ts_scedacity_scatter_plot}()},
-\code{\link{ts_to_tbl}()}
+\code{\link{ts_to_tbl}()},
+\code{\link{util_difflog_ts}()},
+\code{\link{util_doublediff_ts}()},
+\code{\link{util_doubledifflog_ts}()},
+\code{\link{util_log_ts}()},
+\code{\link{util_singlediff_ts}()}
 }
 \concept{Utility}

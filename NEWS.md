@@ -1,3 +1,21 @@
+# healthyR.ts 0.3.0
+
+## Breaking Changes
+None
+
+## New Features
+1. Fix #484 - Add function `util_log_ts()`
+2. Fix #485 - Add function `util_singlediff_ts()`
+3. Fix #486 - Add function `util_doublediff_ts()`
+4. Fix #487 - Add function `util_difflog_ts()`
+5. Fix #488 - Add function `util_doubledifflog_ts()`
+
+## Minor Fixes and Improvements
+1. Fix #480 - Add attributes to output of `ts_growth_rate_vec()`
+2. Fix #481 #483 - Update `auto_stationarize()`
+3. Fix #489 - Update `ts_auto_arima()` to utilize the parsnip engine of `auto_arima`
+if `.tune` is set to `FALSE`
+
 # healthyR.ts 0.2.11
 
 ## Breaking Changes
