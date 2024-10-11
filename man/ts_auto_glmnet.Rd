@@ -72,6 +72,7 @@ This uses \code{parsnip::linear_reg()} and sets the \code{engine} to \code{glmne
 library(dplyr)
 library(timetk)
 library(modeltime)
+library(glmnet)
 
 data <- AirPassengers \%>\%
   ts_to_tbl() \%>\%
@@ -104,8 +105,8 @@ ts_glmnet$recipe_info
 \url{https://parsnip.tidymodels.org/reference/linear_reg.html}
 
 Other Boiler_Plate: 
-\code{\link{ts_auto_arima_xgboost}()},
 \code{\link{ts_auto_arima}()},
+\code{\link{ts_auto_arima_xgboost}()},
 \code{\link{ts_auto_croston}()},
 \code{\link{ts_auto_exp_smoothing}()},
 \code{\link{ts_auto_lm}()},

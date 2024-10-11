@@ -128,7 +128,7 @@ ts_auto_prophet_boost <- function(.data, .date_col, .value_col, .formula, .rsamp
 
     rec_obj <- rec_obj %>%
         timetk::step_timeseries_signature({{date_col_var_expr}}) %>%
-        timetk::step_holiday_signature({{date_col_var_expr}}) %>%
+       # timetk::step_holiday_signature({{date_col_var_expr}}) %>%
         recipes::step_novel(recipes::all_nominal_predictors()) %>%
         recipes::step_mutate_at(tidyselect::vars_select_helpers$where(is.character)
                                 , fn = ~ as.factor(.)) %>%
@@ -276,5 +276,5 @@ ts_auto_prophet_boost <- function(.data, .date_col, .value_col, .formula, .rsamp
     attr(output, ".parsnip_engine") <- "prophet_xgboost"
     attr(output, ".function_family") <- "boilerplate"
 
-    return(invisible(output))
+    return(output)
 }
